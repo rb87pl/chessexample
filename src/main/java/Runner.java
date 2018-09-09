@@ -37,15 +37,31 @@ public class Runner {
 
             if (sum >= 2) {
                 System.out.println("Jest bicie! " + i);
-                break;
+
             } else {
-                System.out.println("Nie ma bicia" );
+                System.out.println("Nie ma bicia");
+
+            }
+
+
+        }
+
+        for (int j = 0; j < chessboard.length; j++) {
+            int sum = 0;
+            for (int i = 0; i < chessboard[j].length; i++) {
+                sum += chessboard[i][j];
+            }
+
+            if (sum >= 2) {
+                System.out.println("Jest bicie! " + j);
+
+            } else {
+                System.out.println("Nie ma bicia");
 
             }
 
         }
 
     }
-
 }
 
